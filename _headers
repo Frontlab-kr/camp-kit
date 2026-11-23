@@ -1,0 +1,10 @@
+# Cloudflare Pages 보안 헤더 (2026-11-23). GitHub Pages는 이 파일을 쓰지 않는다.
+# 바깥으로 연결하는 곳은 구글 애널리틱스와 문의 폼(Web3Forms)뿐이다. 3D 모델 압축 해제(meshopt)는 WebAssembly라 wasm-unsafe-eval이 필요하고,
+# 모델 속 텍스처와 사진은 blob:/data: 주소로 그린다.
+/*
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'wasm-unsafe-eval' https://www.googletagmanager.com; connect-src 'self' https://api.web3forms.com https://www.googletagmanager.com https://*.google-analytics.com https://*.analytics.google.com; img-src 'self' data: blob: https://www.googletagmanager.com https://*.google-analytics.com; style-src 'self' 'unsafe-inline'; font-src 'self' data:; media-src 'self' data: blob:; worker-src 'self' blob:; manifest-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; object-src 'none'; upgrade-insecure-requests
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=(), interest-cohort=()
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
