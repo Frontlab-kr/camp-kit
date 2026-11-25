@@ -1,0 +1,9 @@
+/campgrounds/:id/:site / 200
+/gear / 200
+/gear/:id / 200
+/layouts / 200
+/layouts/:id / 200
+/layouts/:id/check / 200
+/settings / 200
+/trunk / 200
+/inside/:id / 200
